@@ -4,8 +4,7 @@ import Friend from './Friend';
 const FriendsList = ({ changeHandler, friends, submitHandler }) => {
     
     return (
-        <div>
-            <h1>Friends List</h1>
+        <div>            
             {friends.map(friend => (<Friend
             key={friend.id}
             name={friend.name}
