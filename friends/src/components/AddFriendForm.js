@@ -1,13 +1,19 @@
 import React from 'react';
-import { Formik, Form, Field, ErrorMessage } from 'formik';
 
-const AddFriendForm = props => {
-    return (
-        <div className="add-friend">
-            <h2>add friend</h2>
+class AddFriendForm extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            friend: {
+                id: null,
+                name: '',
+                age: null,
+                email: ''
+            }
+        };
+    }
 
-        </div>
-    )
+
 }
 
 export default AddFriendForm;
