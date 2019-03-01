@@ -1,13 +1,10 @@
 import React from 'react';
 import Friend from './Friend';
-import AddFriendForm from './AddFriendForm';
 
-const FriendsList = ({ friends }) => {
+const FriendsList = ({ changeHandler, friends, submitHandler }) => {
     
     return (
-        <div>
-            <h1>Friends List</h1>
-            <AddFriendForm />
+        <div>            
             {friends.map(friend => (<Friend
             key={friend.id}
             name={friend.name}
