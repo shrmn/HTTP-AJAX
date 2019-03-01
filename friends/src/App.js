@@ -50,7 +50,10 @@ class App extends Component {
        })
       .then(res => {
         this.setState({
-          friends: res.data
+          friends: res.data,
+          name: '',
+          age: '',
+          email: ''
         });
       })
       .catch(err => this.setState({ error: err }));
